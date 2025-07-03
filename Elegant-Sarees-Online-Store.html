@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Sarees - Traditional Indian Elegance</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#D0576B',secondary:'#8E4162'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3, h4, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background-image: url('https://readdy.ai/api/search-image?query=elegant%20traditional%20Indian%20saree%20store%20with%20beautiful%20silk%20sarees%20displayed%2C%20soft%20lighting%2C%20traditional%20decor%20elements%2C%20rich%20colors%20of%20gold%20and%20red%2C%20creating%20a%20luxurious%20shopping%20atmosphere%2C%20gradient%20background%20transitioning%20from%20light%20to%20rich%20colors%20on%20right%20side%2C%20leaving%20space%20for%20text%20on%20left&width=1600&height=800&seq=saree1&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .custom-checkbox {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #D0576B;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        .custom-checkbox.checked::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .custom-checkbox.checked {
+            background-color: #D0576B;
+        }
+        .custom-switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 24px;
+        }
+        .switch-track {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e5e7eb;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .switch-thumb {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        .switch-active .switch-track {
+            background-color: #D0576B;
+        }
+        .switch-active .switch-thumb {
+            transform: translateX(24px);
+        }
+        .custom-range {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            border-radius: 5px;
+            background: #e5e7eb;
+            outline: none;
+        }
+        .custom-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #D0576B;
+            cursor: pointer;
+        }
+        .custom-range::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #D0576B;
+            cursor: pointer;
+            border: none;
+        }
+        .product-card:hover .quick-view {
+            opacity: 1;
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+                
+                <!-- Navigation Menu - Desktop -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-800 hover:text-primary font-medium transition">Home</a>
+                    <a href="#" class="text-gray-800 hover:text-primary font-medium transition">Collections</a>
+                    <a href="#" class="text-gray-800 hover:text-primary font-medium transition">Sarees</a>
+                    <a href="#" class="text-gray-800 hover:text-primary font-medium transition">Blouses</a>
+                    <a href="#" class="text-gray-800 hover:text-primary font-medium transition">Store Locator</a>
+                    <a href="#" class="text-gray-800 hover:text-primary font-medium transition">Contact</a>
+                </nav>
+                
+                <!-- Right Icons -->
+                <div class="flex items-center space-x-6">
+                    <!-- Search -->
+                    <div class="relative hidden md:block">
+                        <div class="flex items-center border border-gray-300 rounded-full overflow-hidden pr-10 pl-4 py-2 focus-within:border-primary">
+                            <input type="text" placeholder="Search for sarees..." class="outline-none text-sm w-48 border-none">
+                            <div class="absolute right-3 w-6 h-6 flex items-center justify-center text-gray-500">
+                                <i class="ri-search-line"></i>
+                            </div>
+                            <div class="absolute right-10 w-6 h-6 flex items-center justify-center text-gray-500">
+                                <i class="ri-mic-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Language Selector -->
+                    <div class="relative hidden md:block">
+                        <button class="flex items-center text-gray-700 hover:text-primary">
+                            <span class="mr-1 text-sm">EN</span>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <!-- User Account -->
+                    <div class="w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer">
+                        <i class="ri-user-line ri-lg"></i>
+                    </div>
+                    
+                    <!-- Shopping Cart -->
+                    <div class="relative w-10 h-10 flex items-center justify-center text-gray-700 hover:text-primary cursor-pointer">
+                        <i class="ri-shopping-bag-line ri-lg"></i>
+                        <span class="absolute -top-1 -right-1 bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">3</span>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <div class="w-10 h-10 flex items-center justify-center text-gray-700 md:hidden cursor-pointer">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative min-h-[600px] flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
+        <div class="container mx-auto px-4 z-10">
+            <div class="w-full md:w-1/2 py-16">
+                <h5 class="text-primary font-medium mb-2">LUXURY COLLECTION 2025</h5>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Timeless Elegance in Every Thread</h1>
+                <p class="text-gray-700 text-lg mb-8">Discover our exquisite collection of handcrafted sarees that blend traditional artistry with contemporary designs. Each piece tells a story of heritage and craftsmanship.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+                        Shop Now
+                    </button>
+                    <button class="border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-button font-medium hover:bg-gray-800 hover:text-white transition whitespace-nowrap">
+                        Visit Store
+                    </button>
+                </div>
+                <div class="flex items-center mt-12 space-x-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md">
+                            <i class="ri-truck-line text-primary"></i>
+                        </div>
+                        <span class="ml-2 text-gray-700">Free Shipping</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md">
+                            <i class="ri-shield-check-line text-primary"></i>
+                        </div>
+                        <span class="ml-2 text-gray-700">Quality Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Category Links -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                <a href="#" class="flex items-center px-6 py-3 bg-white rounded-full shadow-sm hover:shadow transition">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-fire-line text-primary"></i>
+                    </div>
+                    <span class="font-medium">Trending</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 bg-white rounded-full shadow-sm hover:shadow transition">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-gift-line text-primary"></i>
+                    </div>
+                    <span class="font-medium">Wedding Collection</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 bg-white rounded-full shadow-sm hover:shadow transition">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-price-tag-3-line text-primary"></i>
+                    </div>
+                    <span class="font-medium">Special Offers</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 bg-white rounded-full shadow-sm hover:shadow transition">
+                    <div class="w-8 h-8 flex items-center justify-center mr-2">
+                        <i class="ri-star-line text-primary"></i>
+                    </div>
+                    <span class="font-medium">New Arrivals</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Collections</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our carefully curated collections of exquisite sarees, each designed to celebrate the rich heritage of Indian craftsmanship.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Collection 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <div class="aspect-w-3 aspect-h-4 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20silk%20saree%20in%20rich%20red%20and%20gold%20colors%20with%20intricate%20traditional%20patterns%2C%20displayed%20elegantly%20against%20a%20neutral%20background%2C%20professional%20product%20photography%20with%20soft%20lighting&width=600&height=800&seq=silk1&orientation=portrait" alt="Silk Sarees" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-2">Silk Sarees</h3>
+                        <p class="text-white/80 mb-4 text-sm">Luxurious silk sarees with intricate designs and rich colors.</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-primary transition">
+                            <span>View Collection</span>
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <div class="aspect-w-3 aspect-h-4 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20wedding%20saree%20in%20rich%20maroon%20and%20gold%20with%20heavy%20embroidery%20and%20zari%20work%2C%20bridal%20collection%2C%20displayed%20on%20mannequin%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=wedding1&orientation=portrait" alt="Wedding Collection" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-2">Wedding Collection</h3>
+                        <p class="text-white/80 mb-4 text-sm">Stunning bridal sarees for your special day.</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-primary transition">
+                            <span>View Collection</span>
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <div class="aspect-w-3 aspect-h-4 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20designer%20saree%20with%20contemporary%20patterns%20and%20modern%20design%20elements%2C%20fusion%20of%20traditional%20and%20modern%20aesthetics%2C%20stylish%20draping%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=designer1&orientation=portrait" alt="Designer Sarees" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-2">Designer Sarees</h3>
+                        <p class="text-white/80 mb-4 text-sm">Contemporary designs with a traditional touch.</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-primary transition">
+                            <span>View Collection</span>
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Collection 4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <div class="aspect-w-3 aspect-h-4 overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20traditional%20cotton%20saree%20with%20classic%20regional%20patterns%20and%20motifs%2C%20earthy%20colors%2C%20handloom%20texture%20visible%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=traditional1&orientation=portrait" alt="Traditional Wear" class="w-full h-full object-cover object-top transition duration-300 group-hover:scale-105">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-white text-xl font-bold mb-2">Traditional Wear</h3>
+                        <p class="text-white/80 mb-4 text-sm">Authentic handloom sarees from across India.</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-primary transition">
+                            <span>View Collection</span>
+                            <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-white border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+                    View All Collections
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Experience Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <!-- Store Images -->
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20traditional%20Indian%20saree%20store%20interior%20with%20beautiful%20displays%2C%20soft%20lighting%2C%20traditional%20decor%20elements%2C%20rich%20colors%2C%20creating%20a%20luxurious%20shopping%20atmosphere%2C%20customers%20browsing%20sarees%2C%20professional%20retail%20photography&width=800&height=600&seq=store1&orientation=landscape" alt="Store Interior" class="w-full h-auto rounded-lg shadow-lg">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-lg flex items-center justify-center p-4 text-center text-white">
+                            <div>
+                                <p class="font-bold text-lg">20+</p>
+                                <p class="text-sm">Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Store Details -->
+                <div class="w-full md:w-1/2">
+                    <h5 class="text-primary font-medium mb-2">VISIT OUR STORE</h5>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Experience the Elegance in Person</h2>
+                    <p class="text-gray-600 mb-6">Step into our boutique and immerse yourself in the world of traditional elegance. Our expert stylists will help you find the perfect saree for any occasion, with personalized styling advice and a curated selection of the finest fabrics.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-4">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Location</h4>
+                                <p class="text-gray-600 text-sm">123 Fashion Street, Mumbai, Maharashtra 400001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-4">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Store Hours</h4>
+                                <p class="text-gray-600 text-sm">Mon-Sat: 10:00 AM - 8:00 PM<br>Sunday: 11:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-4">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Contact</h4>
+                                <p class="text-gray-600 text-sm">+91 98765 43210<br>contact@elegancesarees.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-4">
+                                <i class="ri-customer-service-2-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Services</h4>
+                                <p class="text-gray-600 text-sm">Personal Styling<br>Custom Alterations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+                        Book Store Visit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trending Products -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h5 class="text-primary font-medium mb-2">CUSTOMER FAVORITES</h5>
+                    <h2 class="text-3xl md:text-4xl font-bold">Trending Products</h2>
+                </div>
+                <div class="flex space-x-2">
+                    <button id="prev-trending" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary hover:text-primary transition">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                    <button id="next-trending" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary hover:text-primary transition">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="product-card group bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20banarasi%20silk%20saree%20in%20deep%20purple%20and%20gold%20with%20intricate%20zari%20work%20and%20traditional%20motifs%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=product1&orientation=portrait" alt="Banarasi Silk Saree" class="product-image w-full h-80 object-cover object-top transition duration-300">
+                        <div class="quick-view absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity">
+                            <button class="bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+                                Quick View
+                            </button>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">Bestseller</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg mb-2">Royal Banarasi Silk Saree</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-amber-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">4.8 (124)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-500 line-through text-sm">₹15,999</span>
+                                <span class="text-gray-900 font-bold ml-2">₹12,499</span>
+                            </div>
+                            <button class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card group bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20kanjivaram%20silk%20saree%20in%20rich%20maroon%20and%20gold%20with%20temple%20border%20and%20traditional%20motifs%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=product2&orientation=portrait" alt="Kanjivaram Silk Saree" class="product-image w-full h-80 object-cover object-top transition duration-300">
+                        <div class="quick-view absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity">
+                            <button class="bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg mb-2">Classic Kanjivaram Silk</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-amber-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">5.0 (87)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-500 line-through text-sm">₹18,999</span>
+                                <span class="text-gray-900 font-bold ml-2">₹16,799</span>
+                            </div>
+                            <button class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card group bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20designer%20georgette%20saree%20in%20pastel%20blue%20with%20silver%20embroidery%20and%20contemporary%20patterns%2C%20lightweight%20and%20flowing%20fabric%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=product3&orientation=portrait" alt="Designer Georgette Saree" class="product-image w-full h-80 object-cover object-top transition duration-300">
+                        <div class="quick-view absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity">
+                            <button class="bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+                                Quick View
+                            </button>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-emerald-500 text-white text-xs px-3 py-1 rounded-full">New Arrival</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg mb-2">Contemporary Georgette</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-amber-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">4.1 (42)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-900 font-bold">₹8,999</span>
+                            </div>
+                            <button class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card group bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20handloom%20cotton%20saree%20in%20earthy%20tones%20with%20traditional%20tribal%20motifs%20and%20natural%20dyes%2C%20textured%20fabric%2C%20professional%20product%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=600&height=800&seq=product4&orientation=portrait" alt="Handloom Cotton Saree" class="product-image w-full h-80 object-cover object-top transition duration-300">
+                        <div class="quick-view absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 transition-opacity">
+                            <button class="bg-white text-gray-800 px-4 py-2 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+                                Quick View
+                            </button>
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-amber-500 text-white text-xs px-3 py-1 rounded-full">Limited Edition</span>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium text-lg mb-2">Artisan Handloom Cotton</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-amber-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">4.7 (63)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-500 line-through text-sm">₹7,499</span>
+                                <span class="text-gray-900 font-bold ml-2">₹5,999</span>
+                            </div>
+                            <button class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-primary hover:text-white transition">
+                                <i class="ri-shopping-bag-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block bg-white border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional Experience -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h5 class="text-primary font-medium mb-2">LEARN & EXPLORE</h5>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Traditional Experience</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover the art of saree draping, styling tips, and the rich heritage behind each traditional weave.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Video Tutorial -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative aspect-w-16 aspect-h-9">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20saree%20draping%20tutorial%2C%20woman%20demonstrating%20how%20to%20drape%20a%20traditional%20silk%20saree%2C%20step%20by%20step%20process%2C%20professional%20video%20thumbnail%20with%20soft%20lighting%20and%20traditional%20setting&width=800&height=450&seq=tutorial1&orientation=landscape" alt="Saree Draping Tutorial" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 flex items-center justify-center bg-primary/90 text-white rounded-full cursor-pointer hover:bg-primary transition">
+                                <i class="ri-play-fill ri-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Master the Art of Saree Draping</h3>
+                        <p class="text-gray-600 mb-4">Learn how to drape different styles of sarees for various occasions with our expert stylist Priya Sharma.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <div class="flex items-center mr-4">
+                                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                <span>12:45 mins</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                    <i class="ri-eye-line"></i>
+                                </div>
+                                <span>24.5K views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Styling Guide -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="grid grid-cols-2 gap-4 p-6">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Styling Guide</h3>
+                            <p class="text-gray-600 mb-6">Discover how to accessorize your saree for different occasions and create stunning looks.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-3 mt-1">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Jewelry Pairing</h4>
+                                        <p class="text-gray-600 text-sm">Learn which jewelry complements different saree styles.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-3 mt-1">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Blouse Selection</h4>
+                                        <p class="text-gray-600 text-sm">Tips for choosing the perfect blouse design for your saree.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full text-primary mr-3 mt-1">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Occasion Styling</h4>
+                                        <p class="text-gray-600 text-sm">Styling tips for weddings, festivals, and formal events.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium mt-6">
+                                <span>Read Full Guide</span>
+                                <div class="w-5 h-5 flex items-center justify-center ml-1">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <img src="https://readdy.ai/api/search-image?query=elegant%20woman%20in%20traditional%20silk%20saree%20with%20perfect%20accessories%2C%20gold%20jewelry%2C%20perfect%20styling%2C%20professional%20fashion%20photography%20with%20soft%20lighting%20against%20neutral%20background&width=400&height=500&seq=styling1&orientation=portrait" alt="Saree Styling" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Blog Section -->
+            <div class="mb-12">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-2xl font-bold">Latest Articles</h3>
+                    <a href="#" class="text-primary hover:text-primary/80 font-medium">View All</a>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Blog 1 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20traditional%20saree%20weaving%20process%2C%20artisans%20working%20on%20handloom%2C%20close-up%20of%20intricate%20weaving%20technique%2C%20traditional%20craftsmanship%2C%20professional%20documentary%20photography%20with%20soft%20lighting&width=600&height=400&seq=blog1&orientation=landscape" alt="Saree Weaving" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span>June 24, 2025</span>
+                                <span class="mx-2">•</span>
+                                <span>Heritage</span>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">The Art of Handloom: Preserving Traditional Weaving</h4>
+                            <p class="text-gray-600 text-sm mb-4">Explore the intricate process of handloom weaving and the artisans keeping this tradition alive across India.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 font-medium text-sm">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 2 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20regional%20saree%20styles%20from%20different%20parts%20of%20India%2C%20collection%20of%20diverse%20saree%20types%2C%20cultural%20diversity%20in%20textiles%2C%20professional%20fashion%20photography%20with%20soft%20lighting&width=600&height=400&seq=blog2&orientation=landscape" alt="Regional Sarees" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span>June 20, 2025</span>
+                                <span class="mx-2">•</span>
+                                <span>Culture</span>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Regional Saree Styles: A Cultural Journey</h4>
+                            <p class="text-gray-600 text-sm mb-4">Discover the unique saree styles from different regions of India and the cultural significance behind each.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 font-medium text-sm">Read More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 3 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20modern%20saree%20styling%20for%20young%20women%2C%20contemporary%20saree%20draping%20styles%2C%20fusion%20fashion%2C%20professional%20fashion%20photography%20with%20soft%20lighting&width=600&height=400&seq=blog3&orientation=landscape" alt="Modern Saree Styling" class="w-full h-48 object-cover">
+                        <div class="p-5">
+                            <div class="flex items-center text-sm text-gray-500 mb-3">
+                                <span>June 15, 2025</span>
+                                <span class="mx-2">•</span>
+                                <span>Fashion</span>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Modern Saree Styling for the Contemporary Woman</h4>
+                            <p class="text-gray-600 text-sm mb-4">Innovative ways to style your saree for a contemporary look while honoring traditional aesthetics.</p>
+                            <a href="#" class="text-primary hover:text-primary/80 font-medium text-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="bg-white rounded-lg shadow-md p-8 md:p-12">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-2/3 mb-6 md:mb-0 md:pr-8">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+                        <p class="text-gray-600 mb-6">Stay updated with our latest collections, styling tips, and exclusive offers.</p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input type="email" placeholder="Enter your email address" class="flex-grow px-4 py-3 border border-gray-300 rounded-button focus:outline-none focus:border-primary">
+                            <button class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+                                Subscribe Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20traditional%20Indian%20textile%20pattern%2C%20close-up%20of%20saree%20fabric%20with%20intricate%20designs%20and%20motifs%2C%20rich%20colors%20and%20textures%2C%20professional%20textile%20photography%20with%20soft%20lighting&width=400&height=400&seq=pattern1&orientation=squarish" alt="Traditional Pattern" class="w-full max-w-[200px] h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer more than just beautiful sarees – discover the exceptional experience that sets us apart.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-award-line ri-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Premium Quality</h3>
+                    <p class="text-gray-600">Handpicked fabrics and materials ensuring exceptional quality and durability.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-scissors-line ri-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Custom Alterations</h3>
+                    <p class="text-gray-600">Personalized fitting and alterations to ensure your saree fits perfectly.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-truck-line ri-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Fast Shipping</h3>
+                    <p class="text-gray-600">Secure packaging and express delivery options available nationwide.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+                    <div class="w-16 h-16 flex items-center justify-center bg-primary/10 text-primary rounded-full mx-auto mb-4">
+                        <i class="ri-customer-service-2-line ri-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">Expert Support</h3>
+                    <p class="text-gray-600">Dedicated stylists to help you choose the perfect saree for any occasion.</p>
+                </div>
+            </div>
+            
+            <!-- Virtual Try-On & Size Guide -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Virtual Try-On -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 p-6">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                                <i class="ri-camera-line ri-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Virtual Try-On</h3>
+                            <p class="text-gray-600 mb-6">See how our sarees look on you before making a purchase with our innovative virtual try-on technology.</p>
+                            <button class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+                                Try Now
+                            </button>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://readdy.ai/api/search-image?query=elegant%20woman%20using%20smartphone%20for%20virtual%20try-on%20of%20saree%2C%20augmented%20reality%20shopping%20experience%2C%20modern%20technology%20for%20traditional%20clothing%2C%20professional%20lifestyle%20photography%20with%20soft%20lighting&width=500&height=400&seq=virtual1&orientation=landscape" alt="Virtual Try-On" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Size Guide -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 p-6">
+                            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-full mb-4">
+                                <i class="ri-ruler-line ri-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Size Guide</h3>
+                            <p class="text-gray-600 mb-6">Find your perfect fit with our comprehensive size guide and measurement instructions.</p>
+                            <button class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">
+                                View Guide
+                            </button>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://readdy.ai/api/search-image?query=elegant%20tailor%20measuring%20woman%20for%20saree%20blouse%20fitting%2C%20measuring%20tape%2C%20professional%20tailoring%20process%2C%20professional%20lifestyle%20photography%20with%20soft%20lighting&width=500&height=400&seq=size1&orientation=landscape" alt="Size Guide" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Proof -->
+            <div class="mt-12 bg-white rounded-lg shadow-md p-8">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-2xl font-bold">What Our Customers Say</h3>
+                    <div class="flex space-x-2">
+                        <button id="prev-testimonial" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary hover:text-primary transition">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </button>
+                        <button id="next-testimonial" class="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:border-primary hover:text-primary transition">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex text-amber-400 mb-4">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"The quality of the Banarasi silk saree I purchased exceeded my expectations. The colors are vibrant and the fabric is luxurious. I received so many compliments at my sister's wedding!"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
+                                <img src="https://readdy.ai/api/search-image?query=elegant%20portrait%20of%20Indian%20woman%20in%20her%2030s%2C%20professional%20headshot%20with%20neutral%20background&width=100&height=100&seq=person1&orientation=squarish" alt="Ananya Sharma" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Ananya Sharma</h4>
+                                <p class="text-gray-500 text-sm">Mumbai, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex text-amber-400 mb-4">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"The store experience was exceptional. The staff helped me find the perfect saree for my engagement ceremony and even suggested matching jewelry. The alterations were done perfectly."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
+                                <img src="https://readdy.ai/api/search-image?query=elegant%20portrait%20of%20Indian%20woman%20in%20her%2040s%2C%20professional%20headshot%20with%20neutral%20background&width=100&height=100&seq=person2&orientation=squarish" alt="Meera Patel" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Meera Patel</h4>
+                                <p class="text-gray-500 text-sm">Delhi, NCR</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex text-amber-400 mb-4">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"I ordered online and was impressed by the fast delivery and beautiful packaging. The saree was exactly as shown in the pictures. The virtual try-on feature helped me make the right choice."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
+                                <img src="https://readdy.ai/api/search-image?query=elegant%20portrait%20of%20Indian%20woman%20in%20her%2020s%2C%20professional%20headshot%20with%20neutral%20background&width=100&height=100&seq=person3&orientation=squarish" alt="Riya Kapoor" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Riya Kapoor</h4>
+                                <p class="text-gray-500 text-sm">Bangalore, Karnataka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Purchases -->
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <h4 class="font-bold mb-4">Recent Purchases</h4>
+                    <div class="flex flex-wrap">
+                        <div class="flex items-center bg-gray-50 rounded-full px-4 py-2 m-1">
+                            <div class="w-8 h-8 bg-gray-300 rounded-full overflow-hidden mr-2">
+                                <img src="https://readdy.ai/api/search-image?query=elegant%20portrait%20of%20Indian%20woman%2C%20professional%20headshot%20with%20neutral%20background&width=100&height=100&seq=person4&orientation=squarish" alt="Customer" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-sm">Neha from Chennai purchased a Kanjivaram Silk Saree</span>
+                            <span class="text-xs text-gray-500 ml-2">2h ago</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 rounded-full px-4 py-2 m-1">
+                            <div class="w-8 h-8 bg-gray-300 rounded-full overflow-hidden mr-2">
+                                <img src="https://readdy.ai/api/search-image?query=elegant%20portrait%20of%20Indian%20woman%2C%20professional%20headshot%20with%20neutral%20background&width=100&height=100&seq=person5&orientation=squarish" alt="Customer" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-sm">Pooja from Kolkata purchased a Designer Georgette Saree</span>
+                            <span class="text-xs text-gray-500 ml-2">5h ago</span>
+                        </div>
+                        <div class="flex items-center bg-gray-50 rounded-full px-4 py-2 m-1">
+                            <div class="w-8 h-8 bg-gray-300 rounded-full overflow-hidden mr-2">
+                                <img src="https://readdy.ai/api/search-image?query=elegant%20portrait%20of%20Indian%20woman%2C%20professional%20headshot%20with%20neutral%20background&width=100&height=100&seq=person6&orientation=squarish" alt="Customer" class="w-full h-full object-cover">
+                            </div>
+                            <span class="text-sm">Sanjana from Hyderabad purchased a Banarasi Silk Saree</span>
+                            <span class="text-xs text-gray-500 ml-2">8h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Integration -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <a href="#" class="flex items-center justify-center w-16 h-16 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition">
+            <i class="ri-whatsapp-line ri-2x"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <a href="#" class="text-3xl font-['Pacifico'] text-white mb-4 inline-block">logo</a>
+                    <p class="text-gray-400 mb-6">Celebrating the timeless elegance of traditional Indian sarees with a contemporary touch.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Collections</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Store Locator</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Customer Service</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">My Account</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Track Order</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="text-gray-400">123 Fashion Street, Mumbai, Maharashtra 400001</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="text-gray-400">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-1">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="text-gray-400">contact@elegancesarees.com</span>
+                        </li>
+                    </ul>
+                    
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-grow px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-button text-white focus:outline-none focus:border-primary">
+                        <button class="bg-primary text-white px-4 py-2 rounded-r-button hover:bg-primary/90 transition whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Store Locations Map -->
+            <div class="mb-12 bg-gray-800 rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <h4 class="text-lg font-bold mb-4">Our Store Locations</h4>
+                    <p class="text-gray-400 mb-4">Visit us at any of our stores for a personalized shopping experience.</p>
+                </div>
+                <div class="h-[300px] w-full bg-cover bg-center" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"></div>
+            </div>
+            
+            <!-- Bottom Footer -->
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Elegance Sarees. All rights reserved.</p>
+                    
+                    <div class="flex flex-wrap justify-center">
+                        <div class="flex items-center mx-2 mb-2 md:mb-0">
+                            <div class="w-8 h-8 flex items-center justify-center mr-1">
+                                <i class="ri-visa-fill text-gray-400"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm">Visa</span>
+                        </div>
+                        <div class="flex items-center mx-2 mb-2 md:mb-0">
+                            <div class="w-8 h-8 flex items-center justify-center mr-1">
+                                <i class="ri-mastercard-fill text-gray-400"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm">Mastercard</span>
+                        </div>
+                        <div class="flex items-center mx-2 mb-2 md:mb-0">
+                            <div class="w-8 h-8 flex items-center justify-center mr-1">
+                                <i class="ri-paypal-fill text-gray-400"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm">PayPal</span>
+                        </div>
+                        <div class="flex items-center mx-2 mb-2 md:mb-0">
+                            <div class="w-8 h-8 flex items-center justify-center mr-1">
+                                <i class="ri-amazon-pay-fill text-gray-400"></i>
+                            </div>
+                            <span class="text-gray-400 text-sm">Amazon Pay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script id="checkbox-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('.custom-checkbox');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('click', function() {
+                    this.classList.toggle('checked');
+                });
+            });
+        });
+    </script>
+
+    <script id="switch-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const switches = document.querySelectorAll('.custom-switch');
+            switches.forEach(switchEl => {
+                switchEl.addEventListener('click', function() {
+                    this.classList.toggle('switch-active');
+                });
+            });
+        });
+    </script>
+
+    <script id="carousel-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevTrending = document.getElementById('prev-trending');
+            const nextTrending = document.getElementById('next-trending');
+            
+            const prevTestimonial = document.getElementById('prev-testimonial');
+            const nextTestimonial = document.getElementById('next-testimonial');
+            
+            if (prevTrending && nextTrending) {
+                prevTrending.addEventListener('click', function() {
+                    // Carousel functionality would go here
+                });
+                
+                nextTrending.addEventListener('click', function() {
+                    // Carousel functionality would go here
+                });
+            }
+            
+            if (prevTestimonial && nextTestimonial) {
+                prevTestimonial.addEventListener('click', function() {
+                    // Carousel functionality would go here
+                });
+                
+                nextTestimonial.addEventListener('click', function() {
+                    // Carousel functionality would go here
+                });
+            }
+        });
+    </script>
+
+    <script id="mobile-menu-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.ri-menu-line').parentElement;
+            
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // Mobile menu functionality would go here
+                });
+            }
+        });
+    </script>
+</body>
+</html>
